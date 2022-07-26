@@ -10,13 +10,9 @@
     <meta name="description" content="admin.digital ist eine bewährte und sichere Cloud Plattform für Schweizer Kantone und Gemeinden: Formulare, Reservationen, Verzeichnisse, Webauftritt" />
 
     <meta property="og:site_name" content="admin.digital">
-<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/2021-62-ergebnispraesentation/">
-<meta property="og:title" content="Ergebnispräsentation für Wahlen und  Abstimmungen">
+<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/elektronisches-siegel/">
+<meta property="og:title" content="Digitalisierung des Behördenstempels">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/2021-62-ergebnispraesentation/og_image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="627">
-<meta property="og:image:type" content="image/png">
 
     <meta property="og:url" content="https://www.admin.digital" />
     <meta property="og:type" content="article" />
@@ -94,25 +90,39 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-6 blog-post">
-                    <p class="paragraph-regular">Release 2021.62</p>
-                    <a href="#"><h2 class="heading-2">Ergebnispräsentation für Wahlen und  Abstimmungen</h2></a>
+                    
+                    <a href="#"><h2 class="heading-2">Digitalisierung des Behördenstempels</h2></a>
                     <div class="img-overlay d-flex align-items-center">
                         <div class="left">
-                            <p class="button-bold">30.06.2021</p>
+                            <p class="button-bold">26.07.2022</p>
                         </div>
                     </div>
-                    <p class="paragraph-medium lead">Für die Ergebnispräsentation am Abstimmungssonntag können neu individuelle Ansichten erstellt werden. Jede Ansicht hat eine fixe URL und lädt sich bei neuen Resultaten automatisch selbst neu.</p>
-                    <p class="paragraph-medium"><p>Somit können Bildschirme im Wahllokal einfach die entsprechende Seite im Browser anzeigen. Zudem können verschiedene Ansichten können gruppiert werden und zyklisch mit genau definierten zeitlichen Abständen abgearbeitet werden.</p>
-<p>Für den Aufbau der Ansichten steht je nach Typ (Majorzwahl, Proporzwahl, Abstimmung mit oder ohne Gegenvorschlag) verschiedene Elemente zur Verfügung, welche auch auf eingebauten Ansichten zur Verfüngung stehen: Diagramme, Karten, Tabellen und Auszählungsstand. Diese Elemente können frei in einem Zeilen und Spalten-Format angeordnet werden. Die Ansichten und Elemente können zudem grösstenteils individuelle gestaltet werden (Farbe, Schrift etc.).</p>
-<p><img src="2021-62-election-day-screen-1.png" alt="Beispiel einer  zusammengesetzen Ansicht mit Auszählungsstand links und Balkendiagramm rechts.">
-Beispiel einer  zusammengesetzen Ansicht mit Auszählungsstand links und Balkendiagramm rechts.</p>
-<p><img src="2021-62-election-day-screen-2.png" alt="Beispiel einer zusammengesetzen Ansicht mit Balken und Karten.">
-Beispiel einer zusammengesetzen Ansicht mit Balken und Karten.</p>
+                    <p class="paragraph-medium lead">In Zusammenarbeit mit der Swisscom bietet admin.digital elektronische Siegel für amtliche  Dokumente.</p>
+                    <p class="paragraph-medium"><p>Das elektronische Siegel ist der Behördenstempels des digitalen Zeitalters. Behörden können mit elektronischen Siegeln den Herkunftsnachweis erbringen und damit den Zeitpunkt, die Integrität und Authentizität eines Dokumentes.  Das Schweizer Gesetz ZertES reglt die Verwendung von elektronischen Siegel vor und erlaubt damit, rechtskonforme Signaturen im Namen einer Organisation als juristische Person durchzuführen und ein gesiegeltes Dokument als Beweisstück vorzulegen.</p>
+<p>Elektronische Siegel basieren technisch auf dem gleichen Verfahren wie eine elektronische Signatur und werden über den <a href="https://trustservices.swisscom.com/elektronische-siegel/">Signing Service der Swisscom</a> erstellt.</p>
+<h3>Urheberschaft und Unveränderbarkeit</h3>
+<p>Amtliche Dokumente werden vermehrt digital verschickt oder publiziert. Elektronische Siegel ermöglichen die Sicherstellung der Integrität von Dokumenten und bestätigen deren Urheberschaft. Ergo kann damit sichergestellt werden, dass ein digital gesigeltes Dokument tatsächlich von der angegebenen Organisation stammt und seit dem Anbringen des Siegels nicht mehr verändert wurde.</p>
+<h3>Digitaler Siegel­ungsprozess</h3>
+<p>Dokumente können in der OneGov Cloud rechtsgültig digital gesiegelt werden. Der Prozess der digitalen Sieglung stellt erhöhte Anforderungen an die Sicherheit. Nur Administratoren haben das Recht zum digitalen Siegeln und selbst wenn sie bereits eingeloggt sind müssen sie zum Siegeln immer ihren YubiKey verwenden. Damit wird verhindert, dass jemand unbefugt ein Dokument mit einem elektronischen Siegel erstellt. Für ein missbräuchlich gesiegeltes Dokument müssten also nicht nur das Login und Passwort des Administrators in falsche Hände geraten, sondern auch dessen physischer YubiKey gestohlen worden sein.</p>
+<h3>Vollständige Nachvollziehbarkeit</h3>
+<p>Vor jedem digitalen Siegeln wird also zur Sicherheit im Hintergrund das Login und der YubiKey geprüft. Ein sogenannter digitaler Fingerabdruck des Dokuments wird danach über eine verschlüsselte Verbindung an den <a href="https://trustservices.swisscom.com/signing-service">Signing Service</a> von Swisscom Trust Services gesendet wo das Dokument digital signiert wird.</p>
+<p>Folgende Informationen werden für die Nachvollziehbarkeit permanent aufgezeichnet:</p>
+<ul>
+<li>Die ID der Anfrage an die Swisscom</li>
+<li>Das Yubikey Token</li>
+<li>Der Zeitstempel</li>
+<li>Der auslösende Benutzer</li>
+<li>Der Fingerabdruck der Datei vor der Siegelung</li>
+<li>Der Fingerabdruck der Datei nach der Siegelung</li>
+<li>Selbst wenn die Datei später gelöscht wird, können wir weiterhin prüfen ob eine bestimmte Datei auf unserem System gesiegelt wurde.</li>
+</ul>
+<h3>Verfügbar für Gemeindeverwaltungen</h3>
+<p>Die elektronischen Siegel stehen für alle Gemeinden Plattform von admin.digital zur Verfügung. Ein weiterer Schritt für die digitale Transformation der Gemeindeverwaltung.</p>
 </p>
                 </div>
                 <div class="col-xl-4 col-lg-5 offset-lg-1 offset-xl-1 blog-sidebar">
                     
-                    <a href="../elektronisches-siegel/"><h6 class="small-heading">Digitalisierung des Behördenstempels</h6></a>
+                    <a href="./"><h6 class="small-heading">Digitalisierung des Behördenstempels</h6></a>
                     <hr>
                     
                     <a href="../cloud-schweizer-gemeinden/"><h6 class="small-heading">admin.digital - Cloud für Schweizer Gemeinden</h6></a>
@@ -130,7 +140,7 @@ Beispiel einer zusammengesetzen Ansicht mit Balken und Karten.</p>
                     <a href="../2021-67-ticket-zuweisung/"><h6 class="small-heading">Zuweisen von Tickets und Ticket-Inbox</h6></a>
                     <hr>
                     
-                    <a href="./"><h6 class="small-heading">Ergebnispräsentation für Wahlen und  Abstimmungen</h6></a>
+                    <a href="../2021-62-ergebnispraesentation/"><h6 class="small-heading">Ergebnispräsentation für Wahlen und  Abstimmungen</h6></a>
                     <hr>
                     
                 </div>
