@@ -10,13 +10,13 @@
     <meta name="description" content="admin.digital ist eine bewährte und sichere Cloud Plattform für Schweizer Kantone und Gemeinden: Formulare, Reservationen, Verzeichnisse, Webauftritt" />
 
     <meta property="og:site_name" content="admin.digital">
-<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/onegov-cloud-admin-digital/">
-<meta property="og:title" content="OneGov Cloud wird Teil von admin.digital">
+<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/yubikey/">
+<meta property="og:title" content="Sicheres Login mit YubiKey">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/onegov-cloud-admin-digital/og_image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="627">
-<meta property="og:image:type" content="image/png">
+<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/yubikey/og_image.png">
+<meta property="og:image:width" content="2560">
+<meta property="og:image:height" content="1340">
+<meta property="og:image:type" content="image/jpeg">
 
     <meta property="og:url" content="https://www.admin.digital" />
     <meta property="og:type" content="article" />
@@ -95,25 +95,35 @@
             <div class="row">
                 <div class="col-xl-7 col-lg-6 blog-post">
                     
-                    <a href="#"><h2 class="heading-2">OneGov Cloud wird Teil von admin.digital</h2></a>
+                    <a href="#"><h2 class="heading-2">Sicheres Login mit YubiKey</h2></a>
                     <div class="img-overlay d-flex align-items-center">
                         <div class="left">
-                            <p class="button-bold">22.07.2021</p>
+                            <p class="button-bold">02.08.2022</p>
                         </div>
                     </div>
-                    <p class="paragraph-medium lead">Mit admin.digital wird OneGov Cloud ein Teil der Schweizer Cloud Plattform für Kantone und Gemeinden.</p>
-                    <p class="paragraph-medium"><p>admin.digital basiert auf der bewährten und sicheren Lösung OneGov Cloud. Entwickelt wird admin.digital weiterhin als Open Source Software von der Luzerner Softwareschmiede seantis in der Gemeinschaft des Vereins OneGov.ch. Betrieben wird admin.digital in zertifizierten Schweizer Rechenzentren.</p>
-<p>seantis entwickelt Webapplikationen für die medizinische Forschung, die öffentliche Verwaltung sowie für die Aviatik.</p>
-<ul>
-<li>Verein OneGov.ch: <a href="http://www.onegov.ch">http://www.onegov.ch</a></li>
-<li>OneGov Cloud: <a href="https://github.com/OneGov/onegov-cloud">https://github.com/OneGov/onegov-cloud</a></li>
-<li>seantis gmbh: <a href="http://www.seantis.ch">http://www.seantis.ch</a></li>
-</ul>
+                    <p class="paragraph-medium lead">Mit einem Hardware-Schlüssel von YubiKey melden sich alle Benutzer mit höchster Sicherheit bei admin.digtal an.</p>
+                    <p class="paragraph-medium"><p>Passwörter sind eine bekannte Schwachstelle und eines der grössten Probleme IT-Sicherheit überhaupt. Darum setzt die Plattform von admin.digital konsequent auf Zwei-Faktor-Authentisierung (2FA). Damit werden die Benutzerkonten zusätzlich zu einem Passwort (etwas was der Benutzer weiss)  mit einem Schlüssel (etwas was der Benutzer besitzt) geschützt. Der Account ist so also zum potentiell unsicheren Passwort durch einen weiteren Faktor geschützt.</p>
+<h2>YubiKey Schlüssel</h2>
+<p>Für die Schlüssel verwenden wir die Schlüssel <a href="https://www.yubico.com/der-yubikey/?lang=de">YubiKey</a> der Firma <a href="https://www.yubico.com">Yubico</a>. Yubico ist die globale Marktführerin für Hardware-Schlüssel. Die YubiKeys Hardware-Schlüssel sehen tatsächlich aus wie Schlüssel und werden analog zu einem Schlüsselloch in den USB-Eingang gesteckt um Zugang zu erhalten. Ein YubiKey funktioniert wie eine externe Tastatur und kann einfach per USB an Ihr PC/Mac angeschlossen werden. Der YubiKey funktioniert auf sämtlichen Betriebsystemen ohne zusätzliche Software/Treiber-Installation.</p>
+<h2>Einloggen mit YubiKey</h2>
+<p>Jedes Mal, wenn der Benutzer den Knopf drückt, wird ein neues OneTime Token erzeugt. Auf dem Login-Formular müssen daher ein persönliches Passwort und das YubiKey Token eingegeben werden. Bequem für den Benutzer: andere bekannte Zwei-Faktor-Authenfizierungen machen den Prozess für den Benutzer mühsamer: ich muss z.B. das Token von meinem Handy ablesen und dieses dann in das entsprechende Formularfeld übertragen. YubiKey hingegen erspart dem User Tippen und macht den Login-Prozess so benutzerfreundlicher.</p>
+<h2>Sichere Hardware-Schlüssel</h2>
+<p>Hardware-Schlüssel gelten als eines der sichersten Mittel für Zwei-Faktor-Authentisierung. Unternehmen mit sehr hohen Sicherheitsansprüchen setzen konsequent auf Hardware-Schlüsseln wie den Yubikey. So schützt z.B. Google die Benutzerkonten seiner mehr als 85'000 Mitarbeiter mit Hardware-Schlüsseln und konnte seit der Einführung von Sicherheitsschlüsseln die <a href="https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/">feindliche Übernahme von Account kpmplett verhindern</a>. Die Authentisierung per Hardware-Schlüssel gilt sogar als noch sicherer als biometrische Verfahren wie z.B. Iris- oder Fingerabdruckscanner, da kryptografischen Schlüssel sicher auf dem Gerät hintelegt sind.</p>
+<h2>Der YubiKey in Ihrer Organisation</h2>
+<p>Um die Authentifikation für Ihre Webapplikation sicher zu machen, werden alle Ihre Mitarbeiter mit YubiKeys ausgerüstet. Der Prozess dazu sieht wie folgt aus:</p>
+<ol>
+<li>seantis bestellt für Ihre Organisation die YubiKeys</li>
+<li>Jedem Benutzeraccount wird ein YubiKey zugeordnet</li>
+<li>seantis schickt die YubiKeys per Post an Ihre Mitarbeiter</li>
+<li>Ihre Mitarbeiter können sich sofort mit ihrem persönlichen YubiKey sicher einloggen.</li>
+</ol>
+<p>Sie können organisatorisch sicherstellen, dass alle Mitarbeiter ihre YubiKeys sicher in den Büroräumlichkeiten verwahren. So besteht eine erweiterte Kontrolle wer wo und wann Zugriff auf sensible Daten hat. Persönliche YubiKeys lassen sich mit sofortiger Wirkung entziehen.</p>
+<p>Ein YubiKey lässt sich damit bei einer personellen Mutation einfach von einem Benutzer einziehen und an einen anderen weitergeben. Geht ein Schlüssel verloren oder wird gestohlen, so kann dieser mit sofortiger Wirkung für beim entsprechenden Benutzerkonto entfernt werden, so dass kein Login mehr möglich ist. Ein weiterer Vorteil eines Hardware-Schlüssel gegenüber Passwörtern ist, dass ein Velust oder gar Diebstahl – im Gegensatz zu Passwörtern – nicht unbemerkt bleibt.</p>
 </p>
                 </div>
                 <div class="col-xl-4 col-lg-5 offset-lg-1 offset-xl-1 blog-sidebar">
                     
-                    <a href="../yubikey/"><h6 class="small-heading">Sicheres Login mit YubiKey</h6></a>
+                    <a href="./"><h6 class="small-heading">Sicheres Login mit YubiKey</h6></a>
                     <hr>
                     
                     <a href="../elektronische-siegel/"><h6 class="small-heading">Digitalisierung des Behördenstempels</h6></a>
@@ -125,7 +135,7 @@
                     <a href="../2022-3-swissvotes-kampagnenmaterial/"><h6 class="small-heading">Swissvotes Kampagnenmaterial</h6></a>
                     <hr>
                     
-                    <a href="./"><h6 class="small-heading">OneGov Cloud wird Teil von admin.digital</h6></a>
+                    <a href="../onegov-cloud-admin-digital/"><h6 class="small-heading">OneGov Cloud wird Teil von admin.digital</h6></a>
                     <hr>
                     
                     <a href="../2021-67-verbesserte-mutationsmeldungen/"><h6 class="small-heading">Verbesserte Mutationsmeldungen beim Staatskalender</h6></a>
