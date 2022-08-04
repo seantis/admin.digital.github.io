@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="../../../static/custom.css">
 
     <link rel="stylesheet" href="../../../static/glider.min.css">
+    <link href="../../../static/aos.css" rel="stylesheet">
 
     <!-- Matomo -->
     <script>
@@ -233,6 +234,7 @@
 
     <script src="../../../static/bootstrap.bundle.min.js"></script>
     <script src="../../../static/glider.min.js"></script>
+    <script src="../../../static/aos.js"></script>
 
     <script>
         new Glider(document.querySelector('.glider'), {
@@ -242,6 +244,13 @@
                 prev: '.glider-prev',
                 next: '.glider-next'
             },
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            delay: 700,
+            duration: 700,
         });
     </script>
 
