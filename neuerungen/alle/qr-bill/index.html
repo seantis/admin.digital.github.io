@@ -100,14 +100,29 @@
                     <a href="#"><h2 class="heading-2">QR-Rechnungen</h2></a>
                     <div class="img-overlay d-flex align-items-center">
                         <div class="left">
-                            <p>02.09.2022</p>
+                            <p>20.09.2022</p>
                         </div>
                     </div>
                     <p class="paragraph-medium lead">Feriennet – die Buchungsplattform für betreute Ferienangebote unterstützt neu QR-Rechnungen.</p>
                     <p class="paragraph-medium"><p>Die QR-Rechnung werden direkt mit den Zahlungsangaben im Benutzerportal angezeigt und können direkt von dort eingescannt werden - kein unnötiger Papierverbrauch mehr!</p>
 <p><img src="qr-bill.png" alt="QR-Rechnungen">
 <em>QR-Rechnung</em></p>
-<p><strong>Projuventute Feriennet: <a href="https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet/">https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet/</a></strong></p>
+<h2>Open Source Python Library</h2>
+<p>Für die Umsetzung konnten wir auf eine Open Source Python Library zurückgreifen. Die Library ermöglicht es einfach QR-Rechungen nach Schweizer Standard zu erstellen. Wir unterstützen <code>swiss-qr-bill</code> als Sponsor: <a href="https://github.com/claudep/swiss-qr-bill">https://github.com/claudep/swiss-qr-bill</a></p>
+<pre><code class="language-python">
+>>> from qrbill import QRBill
+>>> my_bill = QRBill(
+        account='CH5800791123000889012',
+        creditor={
+            'name': 'Jane', 'pcode': '1000', 
+            'city': 'Lausanne', 'country': 'CH',
+        },
+        amount='22.45',
+    )
+>>> bill.as_svg('/tmp/my_bill.svg')
+</code></pre><h2>Pro Juventute Feriennet</h2>
+<p>Pro Juventute fördert die Idee der betreuten Ferienangebote und unterstützt mit der Buchungsplattform Feriennet seit 2010 über 150 Ferienpässe in der ganzen Schweiz</p>
+<p><strong>Pro Juventute Feriennet: <a href="https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet/">https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet/</a></strong></p>
 </p>
                 </div>
                 <div class="col-xl-4 col-lg-5 offset-lg-1 offset-xl-1 blog-sidebar">
