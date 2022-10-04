@@ -10,12 +10,12 @@
     <meta name="description" content="admin.digital ist eine bewährte und sichere Cloud Plattform für Schweizer Kantone und Gemeinden: Formulare, Reservationen, Verzeichnisse, Webauftritt" />
 
     <meta property="og:site_name" content="admin.digital">
-<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/qr-bill/">
-<meta property="og:title" content="QR-Rechnungen">
+<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/karte-basel-stadt/">
+<meta property="og:title" content="Basel-Stadt-Kartendienst MapBS integriert">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/qr-bill/og_image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="627">
+<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/karte-basel-stadt/og_image.png">
+<meta property="og:image:width" content="594">
+<meta property="og:image:height" content="310">
 <meta property="og:image:type" content="image/png">
 
     <meta property="og:url" content="https://www.admin.digital" />
@@ -96,41 +96,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-6 blog-post">
-                    <p class="paragraph-regular">Release 2022.43</p>
-                    <a href="#"><h2 class="heading-2">QR-Rechnungen</h2></a>
+                    <p class="paragraph-regular">Release 2022.48</p>
+                    <a href="#"><h2 class="heading-2">Basel-Stadt-Kartendienst MapBS integriert</h2></a>
                     <div class="img-overlay d-flex align-items-center">
                         <div class="left">
-                            <p>20.09.2022</p>
+                            <p>05.10.2022</p>
                         </div>
                     </div>
-                    <p class="paragraph-medium lead">Feriennet – die Buchungsplattform für betreute Ferienangebote unterstützt neu QR-Rechnungen.</p>
-                    <p class="paragraph-medium"><p>Die QR-Rechnung werden direkt mit den Zahlungsangaben im Benutzerportal angezeigt und können direkt von dort eingescannt werden - kein unnötiger Papierverbrauch mehr!</p>
-<p><img src="qr-bill.png" alt="QR-Rechnungen">
-<em>QR-Rechnung</em></p>
-<h2>Open Source Python Library</h2>
-<p>Für die Umsetzung konnten wir auf eine Open Source Python Library zurückgreifen. Die Library ermöglicht es einfach QR-Rechungen nach Schweizer Standard zu erstellen. Wir unterstützen <code>swiss-qr-bill</code> als Sponsor: <a href="https://github.com/claudep/swiss-qr-bill">https://github.com/claudep/swiss-qr-bill</a></p>
-<pre><code class="language-python">
->>> from qrbill import QRBill
->>> my_bill = QRBill(
-        account='CH5800791123000889012',
-        creditor={
-            'name': 'Jane', 'pcode': '1000', 
-            'city': 'Lausanne', 'country': 'CH',
-        },
-        amount='22.45',
-    )
->>> bill.as_svg('/tmp/my_bill.svg')
-</code></pre><h2>Pro Juventute Feriennet</h2>
-<p>Pro Juventute fördert die Idee der betreuten Ferienangebote und unterstützt mit der Buchungsplattform Feriennet seit 2010 über 150 Ferienpässe in der ganzen Schweiz.</p>
-<p><strong>Pro Juventute Feriennet: <a href="https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet/">https://www.projuventute.ch/de/eltern/lehrpersonen-fachpersonen/feriennet/</a></strong></p>
+                    <p class="paragraph-medium lead">Der Kartendienst von Basel-Stadt kann jetzt als Kartenoption ausgewählt werden. Dadurch wird MapBS anstelle des Standard-Kartendienstes aufgerufen.</p>
+                    <p class="paragraph-medium"><p>Der Kartendienst von MapBS deckt mit seinen standardisierten Darstellungen und Abfragen das Grundangebot an Geoinformationen für die breite Öffentlichkeit und die kantonale Verwaltung ab. Dank diesen aktuell gehaltenen und präzisen Kartendaten können die Adressen der Organisationen der Basel Stadt genau dargestellt und gefunden werden.</p>
+<p><img src="map-bs.png" alt="Karte"></p>
 </p>
                 </div>
                 <div class="col-xl-4 col-lg-5 offset-lg-1 offset-xl-1 blog-sidebar">
                     
-                    <a href="../karte-basel-stadt/"><h6 class="small-heading">Basel-Stadt-Kartendienst MapBS integriert</h6></a>
+                    <a href="./"><h6 class="small-heading">Basel-Stadt-Kartendienst MapBS integriert</h6></a>
                     <hr>
                     
-                    <a href="./"><h6 class="small-heading">QR-Rechnungen</h6></a>
+                    <a href="../qr-bill/"><h6 class="small-heading">QR-Rechnungen</h6></a>
                     <hr>
                     
                     <a href="../api/"><h6 class="small-heading">Webservice API</h6></a>
