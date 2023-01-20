@@ -10,12 +10,12 @@
     <meta name="description" content="admin.digital ist eine bewährte und sichere Cloud Plattform für Schweizer Kantone und Gemeinden: Formulare, Reservationen, Verzeichnisse, Webauftritt" />
 
     <meta property="og:site_name" content="admin.digital">
-<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/cloud-schweizer-gemeinden/">
-<meta property="og:title" content="admin.digital - Cloud für Schweizer Gemeinden">
+<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/wahlen-abstimmungen-datenjournalismus/">
+<meta property="og:title" content="Datenjournalismus Wahlen und Abstimmungen">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/cloud-schweizer-gemeinden/og_image.png">
-<meta property="og:image:width" content="1920">
-<meta property="og:image:height" content="1003">
+<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/wahlen-abstimmungen-datenjournalismus/og_image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
 <meta property="og:image:type" content="image/png">
 
     <meta property="og:url" content="https://www.admin.digital" />
@@ -96,33 +96,55 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-6 blog-post">
-                    
-                    <a href="#"><h2 class="heading-2">admin.digital - Cloud für Schweizer Gemeinden</h2></a>
+                    <p class="paragraph-regular">Release 2023.02</p>
+                    <a href="#"><h2 class="heading-2">Datenjournalismus Wahlen und Abstimmungen</h2></a>
                     <div class="img-overlay d-flex align-items-center">
                         <div class="left">
-                            <p>26.03.2022</p>
+                            <p>20.01.2023</p>
                         </div>
                     </div>
-                    <p class="paragraph-medium lead">admin.digital ist die bewährte und sichere Cloud Plattform für Schweizer Gemeinden. Entwickelt als Open Source Software in der Gemeinschaft des Vereins OneGov.ch und betrieben in zertifizierten Schweizer Rechenzentren. Informationssicherheit und Datenschutz stehen bei admin.digital an erster Stelle.</p>
-                    <p class="paragraph-medium"><h2>Mehrwert durch Digitalisierung</h2>
-<p>Alle reden von digitaler Transformation. Digitalisierung ist kein Selbstzweck und muss einen zweifachen Nutzen bringen. Erstens soll mit einem digitalen Portal die Zugänglichkeit für die Bevölkerung verbessert werden; man erwartet Online-Services rund um die Uhr und nicht nur zu Bürozeiten. Zweitens unterstützten digitale Werkzeuge die Verwaltung in ihren Abläufen und machen Effizienzsteigerungen möglich.</p>
-<h2>Digitale Services</h2>
-<p>Mit <a href="https://www.admin.digital">admin.digital</a> bieten Gemeinden ihren Einwohnerinnen und Einwohnern alle Online Services auf einer sicheren und hochverfügbaren Plattform an:</p>
+                    <p class="paragraph-medium lead">Das Portal zur Publikation von Wahl- und Abstimmungsresultaten bietet für Medienschaffende verschiedene Möglichkeiten für Datenjournalismus.</p>
+                    <p class="paragraph-medium"><p>Auf den Datenportalen der <a href="https://abstimmungen.bl.ch">Kantone Basel Landschaft</a>, <a href="https://abstimmungen.gr.ch">Graubünden</a>, <a href="https://abstimmungen.sz.ch">Schwyz</a>, <a href="https://wab.sg.ch">St. Gallen</a> und <a href="https://wab.zug.ch">Zug</a> werden die Ergebnisse der kantonalen Wahlen und Abstimmungen publiziert.</p>
+<h2>Interaktive Widgets zum Einbetten</h2>
+<p>Interaktive Diagramme und Karten können als iFrame ganz einfach in andere Webportale eingebettet werden. So kann z.B. eine Zeitung einfach auf ihrer Website den aktuellen Stand der Auszählung für Wahlen. Ebenso einfach ist die Einbettung einer interaktive Karte mit den Ergebnissen aus den Gemeinden.</p>
+<p><img src="einbetten.png" alt="Widget einbetten"></p>
+<pre><code class="lang-html">&lt;iframe 
+    src=&quot;https://abstimmungen.bl.ch/election/regierungsratswahlen-2019/candidates-chart
+    entity=&quot; width=&quot;100%&quot; height=&quot;258&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
+</code></pre>
+<p>Die Snippets für <code>Diagramm einbetten</code> bzw. <code>Karte einbetten</code> befindet sich jeweils direkt unterhalb des Widgets und sind so ganz einfach zu finden.</p>
+<p><img src="karte.png" alt="Karte einbetten"></p>
+<pre><code class="lang-html">&lt;iframe 
+    src=&quot;https://abstimmungen.bl.ch/vote/gesetz-vom-27-september-2018-ueber-die-abgeltung-von-planungsmehrwerten/proposal-by-entities-map&quot; 
+    width=&quot;500&quot; height=&quot;332&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
+</code></pre>
+<h2>Karten und Diagramme zum Download</h2>
+<p>Werden Karten oder Diagramme für Print-Produkte benötigt, so können diese als Vektorgrafiken heruntergeladen werden. Die Links zum Download der SVG-Dateien befinden sich ebenso direkt unter dem entsprechenden Diagramm bzw. der entsprechenden Karte.</p>
+<p><img src="karte-download.svg" alt="Download Karte SVG"></p>
+<h2>Download der Rohdaten</h2>
+<p>Alle Daten sind im Rohformat als CSV bzw. JSON verfügbar. Die Daten stehen über eine URL zur Verfügung und sind stets auf dem aktuellen Stand. So können einfach eigene Widgets oder Darstellungen für die offiziellen Datenquellen erstellt werden. Die entsprechenden URLs finden sich zu jeder Wahl oder Abstimmung im Tab <code>Downloads</code>.</p>
+<p><img src="json.png" alt="json"></p>
+<p>Es besteht zudem die Möglichkeit die Daten aller Abstimmungen und Wahlen im Archiv als ZIP File herunterzuladen. Für einzelne Wahlen und Abstimmen sind für Druckversionen ebenso unter dem Tab <code>Downloads</code> PDFs verfügbar.</p>
+<h2>Benachrichtigungen per SMS oder E-Mail</h2>
+<p>Für alle Interessierten besteht die Möglichkeit sich für SMS- bzw. E-Mail-Benachrichtigungen anzumelden. Das Abo ist kostenlos und es werden zeitnah Benachrichtigungen für Zwischen- und Schlussresultate versendet.</p>
+<h2>Screens im Wahlzentrum</h2>
+<p>Im Wahlzentrum werden die Resultate auf Info-Screens angezeigt. Dafür werden im Portal die entsprechenden Screen konfiguriert und die Resultate in Echtzeit ohne Zeitverzögerung publiziert.</p>
+<h2>Katonale Portale Wahl- und Abstimmungsresultate</h2>
+<p>Folgende Kantone publizieren ihre Wahl- und Abstimmungsresultate mit dem Portal von admin.digital.</p>
 <ul>
-<li>Online Schalter mit Formulareingang</li>
-<li>Reservationen mit Online-Bezahlung</li>
-<li>Personen, Verzeichnisse und Verantwortlichkeiten</li>
-<li>Webauftritt mit Porträt, News und Veranstaltungen   </li>
+<li><a href="https://abstimmungen.bl.ch">Kantone Basel Landschaft</a></li>
+<li><a href="https://abstimmungen.gr.ch">Kanton Graubünden</a></li>
+<li><a href="https://abstimmungen.sz.ch">Kanton Schwyz</a></li>
+<li><a href="https://wab.sg.ch">Kanton St. Gallen</a> </li>
+<li><a href="https://wab.zug.ch">Kanton Zug</a> </li>
 </ul>
-<h2>Informations­sicherheit und Datenschutz</h2>
-<p>Unsere Systeme verarbeiten hochsensitive personenbezogene Daten. Informationssicherheit ist daher Teil der DNA unseres Unternehmens. Wir führen ein Informationssicherheitsmanagementsystem und sind gemäss ISO/IEC 27001:2013 zertifiziert. Schützenswerte Daten werden bei Schweizer Cloud Provider in zertifizierten Schweizer Rechenzentren gespeichert.</p>
-<h2>Mehrfach Ausgezeichnet</h2>
-<p>Unsere Plattform wurde mehrfach ausgezeichnet: mit zwei «Best of Swiss Web Award», einem «OneGov Award» sowie mit einer Innovationsförderung der «Geschäftsstelle E-Government Schweiz». Aber wir sammeln keine Awards, sondern das positive Feedback unserer User.</p>
 </p>
                 </div>
                 <div class="col-xl-4 col-lg-5 offset-lg-1 offset-xl-1 blog-sidebar">
                     
-                    <a href="../wahlen-abstimmungen-datenjournalismus/"><h6 class="small-heading">Datenjournalismus Wahlen und Abstimmungen</h6></a>
+                    <a href="./"><h6 class="small-heading">Datenjournalismus Wahlen und Abstimmungen</h6></a>
                     <hr>
                     
                     <a href="../api/"><h6 class="small-heading">Webservice API</h6></a>
@@ -146,7 +168,7 @@
                     <a href="../elektronische-siegel/"><h6 class="small-heading">Digitalisierung des Behördenstempels</h6></a>
                     <hr>
                     
-                    <a href="./"><h6 class="small-heading">admin.digital - Cloud für Schweizer Gemeinden</h6></a>
+                    <a href="../cloud-schweizer-gemeinden/"><h6 class="small-heading">admin.digital - Cloud für Schweizer Gemeinden</h6></a>
                     <hr>
                     
                     <a href="../swissvotes-kampagnenmaterial/"><h6 class="small-heading">Swissvotes Kampagnenmaterial</h6></a>
