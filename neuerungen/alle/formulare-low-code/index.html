@@ -10,10 +10,10 @@
     <meta name="description" content="admin.digital ist eine bewährte und sichere Cloud Plattform für Schweizer Kantone und Gemeinden: Formulare, Reservationen, Verzeichnisse, Webauftritt" />
 
     <meta property="og:site_name" content="admin.digital">
-<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/api/">
-<meta property="og:title" content="Webservice API">
+<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/formulare-low-code/">
+<meta property="og:title" content="FormCode – Formulare mit Low Code">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/api/og_image.png">
+<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/formulare-low-code/og_image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 <meta property="og:image:type" content="image/png">
@@ -96,44 +96,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-6 blog-post">
-                    <p class="paragraph-regular">Release 2022.43</p>
-                    <a href="#"><h2 class="heading-2">Webservice API</h2></a>
+                    
+                    <a href="#"><h2 class="heading-2">FormCode – Formulare mit Low Code</h2></a>
                     <div class="img-overlay d-flex align-items-center">
                         <div class="left">
-                            <p>16.12.2022</p>
+                            <p>07.03.2023</p>
                         </div>
                     </div>
-                    <p class="paragraph-medium lead">Die OneGov Cloud API ermöglicht den maschinenlesbaren Zugriff öffentlicher Daten.</p>
-                    <p class="paragraph-medium"><p>Mit der neuen Komponente <code>onegov.api</code> wurde der Grundstein für die OneGov Cloud API gelegt. Dadurch können bestehende Anwendungen mit minimalem Entwicklungsaufwand so erweitert werden, dass sie ihre öffentlichen Daten in maschinenlesbarer Form anbieten können.</p>
-<p>Eine Datenschnittstelle sollte möglichst standardisiert sein und neben den eigentlichen Daten auch bestimmte Meta-Informationen enthalten: Welche Endpunkte gibt es? Welche Filtermöglichkeiten? In welcher Beziehung stehen die Daten untereinander?</p>
-<p>Die OneGov Cloud API setzt hierbei auf <a href="http://amundsen.com/media-types/collection/"><code>Collection+JSON</code></a>, einen Hypermedia-Type, welche speziell für das Abfragen und Verwaltung von Datensammlungen entwickelt wurde und sehr gut zum Datendesign der OneGov Cloud passt.</p>
-<pre><code class="language-json">
-{
-  "collection": {
-    "version": "1.0",
-    "href": "https://staka.zug.ch/api",
-    "queries": [
-      {
-        "href": "https://staka.zug.ch/api/agencies",
-        "rel": "agencies",
-        "data": [{"name": "parent"}]
-      },
-      {
-        "href": "https://staka.zug.ch/api/people",
-        "rel": "people",
-        "data": []
-      },
-      {
-        "href": "https://staka.zug.ch/api/memberships",
-        "rel": "memberships",
-        "data": [{"name": "agency"}, {"name": "person"}]
-      }
-    ]
-  }
-}
-</code></pre><p><em>Beispiel einer API-Abfrage</em></p>
-<p>Mit dem Staatskalender wurde eine erste API Schnittstelle umgesetzt, welche es erlaubt, Organisation und Personen sowie deren Beziehungen (Mitgliedschaften) abzufragen.</p>
-<p><strong>Staatskalender Zug API: <a href="https://staka.zug.ch/api">https://staka.zug.ch/api</a></strong></p>
+                    <p class="paragraph-medium lead">FormCode ermöglicht die Definition von digitalen Formularen in Low-Code.</p>
+                    <p class="paragraph-medium"><p>«Low Code» oder «No Code» haben sich zu vielversprechenden Werkzeugen für die digitale Transformation von Geschäftsprozessen entwickelt. Diese Plattformen ermöglichen es auch Benutzern ohne Programmierkenntnisse, einfach Anwendungen eigenständig zu realisieren.</p>
+<p>Digitale Formulare sind ein zentrales Kernelemente jeder E-Government Plattform. Für die Definition von Formularen setzt admin.digital seit Beginn auf Low Code. Unsere Eigenentwicklung zur Erstellung von Formularen heisst FormCode.</p>
+<h2>Definition in FormCode</h2>
+<p>Die Erstellung bzw. Definition von Formularen wird bei anderen Softwarelösungen meist über komplizierte Benutzeroberflächen realisiert. Das funktioniert gut für einfache Formulare: man verschiebt ein paar Felder in eine Box und schon steht das eigene Formular. WYSIWYG (What you see is what you get) nennt man dies im Jargon.</p>
+<p><img src="definitition.png" alt="Definitition in FormCode"></p>
+<p>Für Benutzer ohne Erfahrung mag dies gut sein, für Fortgeschrittene aber ist es aber ein eher mühsamer Prozess. Trotz Erfahrung wird man nicht schneller im Erstellen von Formularen. Auch fehlt meist die Möglichkeit das ganze Formular oder einen Teil davon in ein anderes Formular zu kopieren.</p>
+<h2>Snippets als Vorlagen</h2>
+<p>Unsere Erfahrung zeigt, dass die Benutzer mit FormCode zur Definition von Formularen sehr gut zurechtkommen. Anhand der Beispiele, welche wir mitliefern, wurden selbständig Formulare erstellt.</p>
+<p><img src="snippets.png" alt="Snippets für FormCode"></p>
+<p>Für die Definition von Formularen kann der Benutzer auf eine Sammlung von Vorlagen zurückgreifen. Dies ermöglicht das Zusammen-Klicken von Formularen, ohne dass das Know-How von Formcode verloren geht. Ein versierter Benutzer mit etwas Übung wird den Code weiter direkt tippen und arbeitet so effizienter. Ein neuer Benutzer kann dank der Snippets selbstständig neue Formulare erstellen.</p>
 </p>
                 </div>
                 <div class="col-xl-4 col-lg-5 offset-lg-1 offset-xl-1 blog-sidebar">
@@ -141,7 +121,7 @@
                     <a href="../fomulare-low-code/"><h6 class="small-heading">FormCode – Formulare mit Low Code</h6></a>
                     <hr>
                     
-                    <a href="../formulare-low-code/"><h6 class="small-heading">FormCode – Formulare mit Low Code</h6></a>
+                    <a href="./"><h6 class="small-heading">FormCode – Formulare mit Low Code</h6></a>
                     <hr>
                     
                     <a href="../onegov-gever/"><h6 class="small-heading">Schnittstelle zu GEVER Systemen</h6></a>
@@ -153,7 +133,7 @@
                     <a href="../wahlen-abstimmungen-datenjournalismus/"><h6 class="small-heading">Datenjournalismus Wahlen und Abstimmungen</h6></a>
                     <hr>
                     
-                    <a href="./"><h6 class="small-heading">Webservice API</h6></a>
+                    <a href="../api/"><h6 class="small-heading">Webservice API</h6></a>
                     <hr>
                     
                     <a href="../filter-gemeinden/"><h6 class="small-heading">Gemeindefilter für Listen und Kandierende</h6></a>
