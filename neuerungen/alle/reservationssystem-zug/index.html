@@ -13,12 +13,12 @@
         content="admin.digital ist eine bewährte und sichere Cloud Plattform für Schweizer Kantone und Gemeinden: Formulare, Reservationen, Verzeichnisse, Webauftritt" />
 
     <meta property="og:site_name" content="admin.digital">
-<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/api-auth/">
-<meta property="og:title" content="API Authentifizierung">
+<meta property="og:url" content="https://www.admin.digital/neuerungen/alle/reservationssystem-zug/">
+<meta property="og:title" content="Kanton Zug setzt auf Open-Source für Raumreservationen">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/api-auth/og_image.png">
-<meta property="og:image:width" content="1290">
-<meta property="og:image:height" content="634">
+<meta property="og:image" content="https://www.admin.digital/neuerungen/alle/reservationssystem-zug/og_image.png">
+<meta property="og:image:width" content="1194">
+<meta property="og:image:height" content="627">
 <meta property="og:image:type" content="image/png">
 
     <meta property="og:url" content="https://www.admin.digital" />
@@ -91,41 +91,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-6 blog-post">
-                    <p class="paragraph-regular">Release 2022.36</p>
-                    <a href="#"><h2 class="heading-2">API Authentifizierung</h2></a>
+                    
+                    <a href="#"><h2 class="heading-2">Kanton Zug setzt auf Open-Source für Raumreservationen</h2></a>
                     <div class="img-overlay d-flex align-items-center">
                         <div class="left">
-                            <p>22.08.2023</p>
+                            <p>11.07.2025</p>
                         </div>
                     </div>
-                    <p class="paragraph-medium lead">Die OneGov Cloud API ermöglicht eine Authentifizierung für Nutzer, die auf das Rate Limit gestossen sind.</p>
-                    <p class="paragraph-medium"><p>Die Komponente <code>onegov.api</code> wurde um einen Authentifizierungs-Flow erweitert.
-Dieser erleichtert den Umgang für den maschinenlesbare Zugriff: für authentifizierte Nutzer ist nämlich das Rate Limit aufgehoben.</p>
-<p>Die OneGov Cloud API setzt hierbei auf eine token-basierte Authentifizierung.</p>
-<p><img src="og_image.png" alt="Erstellen eines Schlüssels"></p>
-<p>Die Authentisierung der Requests erfolgt mittels kurzlebigen Access-Tokens.</p>
-<ol>
-<li><p>Auf der Website kann unter <code>Einstellungen/OneGov API</code> ein neuer Schlüssel erstellt werden. Der Name des Schlüssels kann beliebig sein.</p>
-</li>
-<li><p>In einen zweiten Schritt kann ein Token generiert werden. Dabei wird ein Request mit dem soeben erstellten Schlüssel abgesendet:</p>
-</li>
-</ol>
-<pre><code class="language-shell">curl -u 659912a7-0fa6-4906-aebd-c7aeb813fcff: \
-URL/api/authenticate
-</code></pre><p>Die Nummer <em>659912a7-0fa6-4906-aebd-c7aeb813fcff</em> ist der Applikations-Schlüssel, mit dem das Token gelöst wird.</p>
-<p>Beispielhafte Response:</p>
-<pre><code class="language-json">
-{
-    "token":"eyJhbGciOiJIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRhZmJiZGY1LZWNkNDUzZSIsImlhdCI6MTY5MjYzMjQ5MCwiZXhwIjoxNjkyNjM2MDkwfQ.9T5Sk2G9AK7JyUtEF5QU5pIyxnZDGzvJOcDwA_sA0joPcfN3oi9a7lQuKgdSaYShgrA"}
-}
-</code></pre><p><em>Beispielhafte Response</em></p>
-<p>Schliesslich wird dieses Access-token in jedem Request mitgeschickt.</p>
-<p><a href="https://docs.onegovcloud.ch/api/api#authorization">Die offizielle Dokumentation</a> beschreibt das Ganze noch in mehr Detail.</p>
+                    <p class="paragraph-medium lead">Die Zuger Gemeinden führen gemeinsam mit dem Kanton ein einheitliches Online-Reservationstool für Räume und Infrastrukturen ein. Die auf der Open-Source-Plattform admin.digital basierende Lösung wird in den kommenden Monaten schrittweise in allen Gemeinden ausgerollt.</p>
+                    <p class="paragraph-medium"><p>Im Rahmen des Projekts 11+1 der Zuger Kantons- und Gemeindeverwaltungen (IGI Zug) werden die Webportale der Zuger Gemeinden auf eine einheitliche digitale Plattform überführt. Diese zentrale Lösung wird gezielt für die spezifischen Anforderungen von Ämtern, Schulen und Gemeinden erweitert. Ein zentrales Bedürfnis ist dabei die Einführung eines gemeinsamen Reservationssystems für Räume und Infrastrukturen.</p>
+<h2>Bewährte Applikation für Online-Reservationen</h2>
+<p>Die bereits im Kanton Zug erfolgreich eingesetzte Applikation für Online-Reservationen wird im Rahmen des Projekts auf weitere Gemeinden ausgerollt. Die Lösung basiert auf der Open-Source-Software von admin.digital und ermöglicht eine flexible, nachhaltige und gemeinschaftlich weiterentwickelbare digitale Infrastruktur. Neben dem technischen Rollout für zusätzliche Mandanten werden auch funktionale Erweiterungen umgesetzt, die aus einer vertieften Bedarfsanalyse im Projekt 11+1 hervorgegangen sind.</p>
+<h2>Hoher Sicherheitsstandard und Funktionsumfang</h2>
+<p>Mit dem Online-Reservationstool der Plattform admin.digital stellt seantis eine bewährte Lösung mit hohen Sicherheitsstandards und Verfügbarkeit bereit. Das System bietet eine einheitliche Anwendung für Kanton, Schulen und Gemeinden. Bestehende Mandanten des bisherigen Reservationstools können ohne Migration und mit erweitertem Funktionsumfang in die neue Plattform überführt werden. Zudem umfasst das Projekt automatisierte Datenmigrationen bestehender Reservationen.</p>
+<h2>Einführung in den Gemeinden</h2>
+<p>Nach dem erfolgreichen Go-Live in der Stadt Zug folgen in den kommenden Monaten die Rollouts in den weiteren Zuger Gemeinden.</p>
+<p><img src="og_image.png" alt="Staatskalender Kanton Luzern"></p>
+<ul>
+<li>Raumreservationen Stadt Zug: <a href="https://tools.stadtzug.ch">https://tools.stadtzug.ch</a></li>
+<li>Plattform admin.digital: <a href="https://admin.digital">https://admin.digital</a></li>
+</ul>
 </p>
                 </div>
                 <div class="col-xl-4 col-lg-5 offset-lg-1 offset-xl-1 blog-sidebar">
                     
-                    <a href="../reservationssystem-zug/"><h6 class="small-heading">Kanton Zug setzt auf Open-Source für Raumreservationen</h6></a>
+                    <a href="./"><h6 class="small-heading">Kanton Zug setzt auf Open-Source für Raumreservationen</h6></a>
                     <hr>
                     
                     <a href="../staatskalender-lu/"><h6 class="small-heading">Kanton Luzern digitalisiert den Staatskalender</h6></a>
@@ -143,7 +133,7 @@ URL/api/authenticate
                     <a href="../datensparsamkeit/"><h6 class="small-heading">Datensparsamkeit</h6></a>
                     <hr>
                     
-                    <a href="./"><h6 class="small-heading">API Authentifizierung</h6></a>
+                    <a href="../api-auth/"><h6 class="small-heading">API Authentifizierung</h6></a>
                     <hr>
                     
                     <a href="../gemeinde-umfrage-myinigmeind/"><h6 class="small-heading">Schweizer Gemeinden sehen Digitalisierung als Chance</h6></a>
