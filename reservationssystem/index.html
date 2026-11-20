@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="../static/glider.min.css">
     <link href="../static/aos.css" rel="stylesheet">
     
-    <link href="../static/reservationssystem.css?h=4cfa5fb9" rel="stylesheet">
+    <link href="../static/reservationssystem.css?h=cb092d11" rel="stylesheet">
 
 
     <script defer data-domain="admin.digital" src="https://analytics.seantis.ch/js/script.js"></script>
@@ -154,7 +154,8 @@
     </section>
 
     <section class="res-section res-section-tint" aria-labelledby="calendar-title">
-        <div class="container res-feature-grid">
+        
+        <div class="container res-feature-grid" data-res-gallery>
             <div class="res-feature-copy">
                 <p class="res-eyebrow">Übersicht &amp; Planung</p>
                 <h2 id="calendar-title">Freie Zeiten auf einen Blick.</h2>
@@ -164,19 +165,59 @@
                     <li>Zeiten für Reinigung oder Unterhalt sperren</li>
                     <li>Auslastung über frei wählbare Zeiträume auswerten</li>
                 </ul>
-                <p class="res-small">Wechseln Sie zwischen Wochen-, Monats- und Belegungsansicht – für den passenden Überblick über freie Zeiten und bestehende Reservationen.</p>
-            </div>
-            <div class="res-gallery" data-res-gallery>
-                
                 <nav class="res-view-switch" aria-label="Kalenderansicht im Produkteinblick">
                     
-                    <a href="../static/images/reservationssystem/Wochenansicht.png" data-res-view="res-screen-week" data-alt="Wochenkalender einer Sporthalle mit verfügbaren und belegten Zeitblöcken" data-caption="Wochenansicht: freie Zeitfenster gezielt auswählen" aria-current="true">Woche</a>
+                    <a href="../static/images/reservationssystem/Wochenansicht.png" data-res-view="res-screen-week" data-alt="Wochenkalender einer Sporthalle mit verfügbaren und belegten Zeitblöcken" data-caption="Wochenansicht: freie Zeitfenster gezielt auswählen" aria-current="true">
+                        <span class="res-view-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="7" width="22" height="21" rx="2"/>
+                                <path d="M10 3v8M22 3v8M5 14h22"/>
+                                
+                                <path d="M12 14v14M20 14v14M5 21h22"/>
+                                
+                            </svg>
+                        </span>
+                        <span class="res-view-copy">
+                            <span class="res-view-title">Wochenansicht</span>
+                            <span class="res-view-description">Freie Zeitfenster gezielt auswählen.</span>
+                        </span>
+                    </a>
                     
-                    <a href="../static/images/reservationssystem/Monatsansicht.png" data-res-view="res-screen-month" data-alt="Monatskalender einer Sporthalle mit verfügbaren und belegten Tagen" data-caption="Monatsansicht: das gesamte Angebot im Überblick">Monat</a>
+                    <a href="../static/images/reservationssystem/Monatsansicht.png" data-res-view="res-screen-month" data-alt="Monatskalender einer Sporthalle mit verfügbaren und belegten Tagen" data-caption="Monatsansicht: das gesamte Angebot im Überblick">
+                        <span class="res-view-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="7" width="22" height="21" rx="2"/>
+                                <path d="M10 3v8M22 3v8M5 14h22"/>
+                                
+                                <path d="M10 19h1m4 0h1m4 0h1m-11 5h1m4 0h1m4 0h1"/>
+                                
+                            </svg>
+                        </span>
+                        <span class="res-view-copy">
+                            <span class="res-view-title">Monatsansicht</span>
+                            <span class="res-view-description">Das gesamte Angebot im Überblick behalten.</span>
+                        </span>
+                    </a>
                     
-                    <a href="../static/images/reservationssystem/Belegung.png" data-res-view="res-screen-occupancy" data-alt="Belegungskalender mit einer Vereinsreservation und Sperrzeiten für die Reinigung" data-caption="Belegung: Reservationen und Sperrzeiten verwalten">Belegung</a>
+                    <a href="../static/images/reservationssystem/Belegung.png" data-res-view="res-screen-occupancy" data-alt="Belegungskalender mit einer Vereinsreservation und Sperrzeiten für die Reinigung" data-caption="Belegung: Reservationen und Sperrzeiten verwalten">
+                        <span class="res-view-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="7" width="22" height="21" rx="2"/>
+                                <path d="M10 3v8M22 3v8M5 14h22"/>
+                                
+                                <path d="m11 21 3 3 7-6"/>
+                                
+                            </svg>
+                        </span>
+                        <span class="res-view-copy">
+                            <span class="res-view-title">Belegung</span>
+                            <span class="res-view-description">Reservationen und Sperrzeiten verwalten.</span>
+                        </span>
+                    </a>
                     
                 </nav>
+            </div>
+            <div class="res-gallery">
                 
 <figure class="res-figure">
     <a class="res-screen res-screen-week" href="../static/images/reservationssystem/Wochenansicht.png" data-res-screenshot aria-label="Wochenansicht: freie Zeitfenster gezielt auswählen – Screenshot vergrössern">
